@@ -35,7 +35,7 @@ namespace WpfApp1
 
                 using (SqlConnection connection =
 
-                    new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                    new SqlConnection(@"Server=DESKTOP-9I76QM9;Database=Quanlysach; Integrated Security=SSPI"))
 
                 {
 
@@ -62,7 +62,7 @@ namespace WpfApp1
             {
                 DataTable danhsach = new DataTable();
                 using (SqlConnection connection =
-                new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                new SqlConnection(@"Server=DESKTOP-9I76QM9;Database=Quanlysach; Integrated Security=SSPI"))
                 using (SqlCommand command =
                     new SqlCommand("SELECT MaSach, Tieude, NamXB, MaTG FROM Sach; ",
  connection))
@@ -98,7 +98,7 @@ namespace WpfApp1
             {
                 DataTable danhsach = new DataTable();
                 using (SqlConnection connection =
-                new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                new SqlConnection(@"Server=DESKTOP-9I76QM9;Database=Quanlysach; Integrated Security=SSPI"))
                 using (SqlCommand command =
                 new SqlCommand("SELECT * FROM Sach;", connection))
                 using (SqlDataAdapter adapter = new SqlDataAdapter(command))
@@ -137,7 +137,7 @@ namespace WpfApp1
             {
                 DataTable danhsach = new DataTable();
                 using (SqlConnection connection =
-                new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                new SqlConnection(@"Server=DESKTOP-9I76QM9;Database=Quanlysach; Integrated Security=SSPI"))
                 using (SqlCommand command =
                 new SqlCommand("SELECT * FROM Sach;", connection))
                 using (SqlDataAdapter adapter = new SqlDataAdapter(command))
@@ -176,7 +176,7 @@ namespace WpfApp1
             {
                 DataTable danhsach = new DataTable();
                 using (SqlConnection connection =
-                new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                new SqlConnection(@"Server=DESKTOP-9I76QM9;Database=Quanlysach; Integrated Security=SSPI"))
                 using (SqlCommand command =
                 new SqlCommand("SELECT * FROM Sach;", connection))
                 using (SqlDataAdapter adapter = new SqlDataAdapter(command))
@@ -210,7 +210,7 @@ namespace WpfApp1
             {
                 DataTable danhsach = new DataTable();
                 using (SqlConnection connection =
-                new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                new SqlConnection(@"Server=DESKTOP-9I76QM9;Database=Quanlysach; Integrated Security=SSPI"))
                 using (SqlCommand command =
                     new SqlCommand("SELECT MaSach, Tieude, TenTG FROM Sach,TacGia WHERE Sach.MaTG=TacGia.MaTG; ",
  connection))

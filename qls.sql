@@ -28,7 +28,7 @@ SoLuongSach int,
 primary key(MaTG),
 )
 
-insert into TacGia values ('T01',N'Nguyễn Quốc Việt','2')s
+insert into TacGia values ('T01',N'Nguyễn Quốc Việt','2')
 insert into TacGia values ('T02',N'Phan Cư Chánh','4')
 insert into TacGia values ('T03',N'Cao Tiến Đạt','5')
 
