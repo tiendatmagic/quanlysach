@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Quản lý sách" Height="377" Width="829">
+        Title="Quản lý sách" Height="447" Width="829">
     <Grid>
         <DataGrid x:Name="dulieu" HorizontalAlignment="Left" Height="165" Margin="120,51,0,0" VerticalAlignment="Top" Width="360"/>
         <Button x:Name="btnKetnoi" Content="Kết nối" HorizontalAlignment="Left" Margin="75,276,0,0" VerticalAlignment="Top" Width="76" Click="btnKetnoi_Click" Height="35"/>
@@ -23,6 +23,7 @@
         <Button x:Name="btnCapnhat" Content="Cập nhật" HorizontalAlignment="Left" Margin="543,276,0,0" VerticalAlignment="Top" Width="77" Click="btnCapnhat_Click" Height="35"/>
         <Button x:Name="btnthoat" Content="Thoát" Margin="665,276,80,0" VerticalAlignment="Top" Height="35" Click="btnthoat_Click"/>
         <Label Content="PHẦN MỀM QUẢN LÝ SÁCH" HorizontalAlignment="Left" Margin="237,10,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFFF10DE" FontFamily="Sitka Text"/>
+        <Button x:Name="btnDulieuu" Content="Hiển thị mã sách, tiêu đề,tên tác giả" HorizontalAlignment="Left" Margin="75,335,0,0" VerticalAlignment="Top" Width="215" Height="35" Click="btnDulieuu_Click"/>
 
     </Grid>
 </Window>

@@ -13,4 +13,5 @@ namespace WpfApp1
         public string NamXB { get; set; }
         public string MaTG { get; set; }
     }
+    //  ©2020 Copy and paste by Tiendatmagic
 }

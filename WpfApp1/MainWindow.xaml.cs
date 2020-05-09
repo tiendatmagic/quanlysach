@@ -203,6 +203,32 @@ namespace WpfApp1
         {
             this.Close();
         }
+
+        private void btnDulieuu_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                DataTable danhsach = new DataTable();
+                using (SqlConnection connection =
+                new SqlConnection(@"Server=DESKTOP-24L225P;Database=Quanlysach; Integrated Security=SSPI"))
+                using (SqlCommand command =
+                    new SqlCommand("SELECT MaSach, Tieude, TenTG FROM Sach,TacGia WHERE Sach.MaTG=TacGia.MaTG; ",
+ connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(danhsach);
+                    }
+                }
+                MessageBox.Show("Ket noi co so du lieu thanh cong.");
+                dulieu.ItemsSource = danhsach.DefaultView;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi khi mo ket noi: " + ex.Message);
+            }
+
+        }
     }
 }
 
